@@ -44,7 +44,7 @@ public class APITest {
     public void deveAdicionarTarefaComSucesso() {
     	
     	System.out.println("deveAdicionarTarefaComSucesso");
-        String future = LocalDate.now().plusDays(1).toString();
+        String future = LocalDate.now().plusYears(15).toString();
 
         RestAssured.given()
             .body("{\"task\":\"Teste via API\",\"dueDate\":\"" + future + "\"}")
